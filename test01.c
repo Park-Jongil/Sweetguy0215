@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int x =100;
+ 
+  printf("10 진수로 출력: %d\n",x);
+  printf(" 8 진수로 출력: %o\n",x);
+  printf("16 진수로 출력: %x\n",x);
+  return 0;
+}
+
