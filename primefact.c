@@ -15,9 +15,8 @@ int main(void)
     		iChkNum = iChkNum / i;
 			break;
 		}    	
-  }	  	
-  }while(i!=iChkNum);
-  printf("%d \n",iChkNum);
+  	}	  	
+  }while(iChkNum!=1);
   return 0;
 }
 
