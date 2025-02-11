@@ -10,7 +10,7 @@ int main()
 	for(i=0;i<10;i++) scanf("%d",&iArray[i]);	
 	iMin = iMax = iArray[0];
 	for(i=0;i<10;i++) {
-// 최대랑 최소숫자 찾기 	
+
 	}
 	printf("Output 10 Numbers = ");
 	for(i=0;i<10;i++) printf("%d ",iArray[i]);	
@@ -19,4 +19,3 @@ int main()
 
 	return(0);
 }
-
