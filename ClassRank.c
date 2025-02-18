@@ -24,7 +24,9 @@ int main(void)
 
     printf("Korean\tEnglish\tMath\tSum\tRank\n");
 	for(i=0;i<10;i++) {
-        printf("%d\t%d\t%d\t%d\t%d\n",iKorean[i],iEnglish[i],iMath[i],iSum[i],iRank[i]);
+        for(j=0;j<10;j++) {
+            if (i+1==iRank[j]) printf("%d\t%d\t%d\t%d\t%d\n",iKorean[j],iEnglish[j],iMath[j],iSum[j],iRank[j]);
+        }
     }
   	return 0;
 }

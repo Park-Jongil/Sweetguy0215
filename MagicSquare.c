@@ -9,19 +9,19 @@ int main(int argc, char* argv[])
 	printf("Input Number = ");
 	scanf("%d",&iMSize);
 
-	int start =1;
-	int half = iMSize*3/2;
-	for(int c=0; c<iMSize; c++) {			
-		for(int r=0; r<iMSize; r++) {
-			pMagicSquare[(c*2-r+iMSize)%iMSize][(r-c+half)%iMSize]=start++;			
-		}
-	}
 	int		iPx = iMSize / 2;
 	int		iPy = iPx * -1;
 	for(i=0;i<iMSize*iMSize;i++) {
 		pMagicSquare[ (iPx+iMSize)%iMSize ][ (iPy+iMSize)%iMSize ] = i + 1;
-		if (i%iMSize==(iMSize-1)) iPy--;
-		 else iPx++,iPy++;
+//		printf("i = %d , Px = %d , Py = %d\n",i+1,iPx,iPy);
+		if (i%iMSize==(iMSize-1)) {
+			iPx = (iMSize / 2) - ((i+1)/iMSize);
+			iPy = ((iMSize/2) * -1) + ((i+1)/iMSize);
+		}
+		 else {
+			iPx++;
+			iPy++;
+		 }
 	}
 
 	for(i=0;i<iMSize;i++) {
