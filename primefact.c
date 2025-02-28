@@ -4,17 +4,17 @@ int main(void)
 {
   int inNum,iChkNum,i;
  
-  printf("¼ÒÀÎ¼öºÐÇØ ¼ýÀÚ = ");
+  printf("ï¿½ï¿½ï¿½Î¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ = ");
   scanf("%d",&inNum);
   iChkNum = inNum;
-  printf("¼ÒÀÎ¼öºÐÇØ = ");
+  printf("ï¿½ï¿½ï¿½Î¼ï¿½ï¿½ï¿½ï¿½ï¿½ = ");
   do {  	
   	for(i=2;i<=iChkNum;i++) {
     	if (iChkNum%i==0) {
-    		printf("%d , ",i);
+    		printf("%d * ",i);
     		iChkNum = iChkNum / i;
-			break;
-		}    	
+			  break;
+		  }    	
   	}	  	
   }while(iChkNum!=1);
   return 0;
