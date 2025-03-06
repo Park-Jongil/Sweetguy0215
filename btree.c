@@ -11,8 +11,8 @@ int main(void)
 	
 	srand(time(NULL));   
 	for(i=0;i<MAX;i++) iArray[i] = -1;
-	for(i=0;i<10;i++) {
-		iChkNum = rand() % 100;
+	for(i=0;i<20;i++) {
+		iChkNum = rand() % 1000;
 		iPos = 1;
 		while(1) {
 			if (iArray[iPos] == -1) {
